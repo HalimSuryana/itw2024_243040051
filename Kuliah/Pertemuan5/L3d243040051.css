@@ -13,11 +13,11 @@ h1 {
   color: darkblue;
 }
 h3 a {
-  color: white;
+  color: red;
 }
 h4 {
   font-style: italic;
-  text-align: right;
+  text-align: center;
 }
 p {
   text-align: center;
@@ -32,4 +32,7 @@ a:hover {
 }
 .biru:hover {
   color: white;
+}
+h3 {
+  text-align: center;
 }
