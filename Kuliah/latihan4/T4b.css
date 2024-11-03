@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: black;
+  background-image: url(Sativaa2.png);
+  background-size: cover;
+  color: #f8f8f8;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: #000047;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header .judul {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #eaf0f4;
+  padding: 3px;
+}
+
+.header a:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.hero {
+  height: 400px;
+  background-image: url(Mas\ ade.jpeg);
+  background-size: cover;
+  background-position: 0 -1px;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+.hero2 {
+  height: 400px;
+  background-image: url(M1\ NIH\ BOS.jpg);
+  background-size: cover;
+  background-position: 0- 180px;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .penulis {
+  font-size: 15px;
+  margin-top: -1px;
+}
+.content .penulis a {
+  color: red;
+  text-decoration: none;
+}
+.content p {
+  margin-bottom: 9px;
+  font-size: 10px;
+}
+
+a href {
+  padding-right: 20px;
+}
+
+.footer {
+  color: #eaeaea;
+  text-align: center;
+  font-size: medium;
+}
