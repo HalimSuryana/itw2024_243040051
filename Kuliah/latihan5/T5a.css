@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: black;
+  background-image: url(Sativaa2.png);
+  background-size: cover;
+  color: #f8f8f8;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: #000047;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header .judul {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #eaf0f4;
+  padding: 3px;
+}
+
+.header a:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.hero {
+  height: 400px;
+  background-image: url(Mas\ ade.jpeg);
+  background-size: cover;
+  background-position: 0 -1px;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+.hero2 {
+  height: 400px;
+  background-image: url(M1\ NIH\ BOS.jpg);
+  background-size: cover;
+  background-position: 0- 180px;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .penulis {
+  font-size: 15px;
+  margin-top: -1px;
+}
+.content .penulis a {
+  color: red;
+  text-decoration: none;
+}
+.content p {
+  margin-bottom: 9px;
+  font-size: 10px;
+}
+
+a href {
+  padding-right: 20px;
+}
+
+.prestasi {
+  text-align: center;
+}
+
+.bar12 {
+  margin-top: 20px;
+  background-color: #133e87;
+}
+
+/* style utama */
+
+.container2 {
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.img li {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #666;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.img li,
+.img li a img,
+.img li img span {
+  border-radius: 50%;
+}
+
+.img li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: #333;
+  text-shadow: 1px 1px 1px #ddd;
+  opacity: 0;
+  transform: scale(0) rotate(0);
+  transition: 0.3s;
+}
+
+.img li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+.clear {
+  clear: both;
+}
+
+/* overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.overlay:target img {
+  animation: fadeAjah 1s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  line-height: 14px;
+  padding: 5px;
+  opacity: 1 0;
+  color: #ddd;
+}
+
+.overlay:target .close {
+  animation: slideDownFed 0.5s 0.5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+  animation: fadeAjah 0.5s 0.5s forwards;
+}
+
+/*navigasi*/
+.next,
+.prev {
+  width: 57px;
+  height: 93px;
+  background-image: url(../latihan5/NEXT.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: 50px;
+  opacity: 0;
+}
+
+.prev {
+  background-image: url(../latihan5/PERV.png);
+  margin-left: -100px;
+}
+
+/* animasi */
+@keyframes fadeAjah {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDowndFade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
