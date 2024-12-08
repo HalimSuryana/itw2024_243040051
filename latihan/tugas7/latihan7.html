@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT PCA SEJAHTERA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="h2">PT PCA SEJAHTERA</h2>
+          <p class="sub-heading">Distributor Barang import</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 800K</h4>
+          <p class="item">Makanan</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 300K</h4>
+          <p class="item">Minuman</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>PT PCA SEJAHTERA<menu></menu></h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">📦</div>
+          <h3>Layanan Pelanggan</h3>
+          <p>
+            Pelayanan Yang baik dari tim Customer Service kami yang
+            selalu siap mendukung dan membantu dengan sepenuh hati!
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🚛</div>
+          <h3>Pengiriman Antar Kota</h3>
+          <p>
+            Layanan pengiriman antar kota dari dan pasti barang samapai dengan selamat kepada anda tentunya anda akan mendapatkan barang tidak lebih dari 1 minggu
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🛍️</div>
+          <h3>Barang berkualitas</h3>
+          <p>
+            Barang yang kami perjual belikan adalah barang yang berkualitas tinggi dan sudah memenuhi sop dan tidak ada cacat sekalipun
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🎟️</div>
+          <h3>Promo</h3>
+          <p>
+            Nikmati promo spesial dari PT PCA SEJAHTERA! Jangan lewatkan kesempatan ini Karena kami akan mengadakan promo di setiap hari hari besar,dan juga akan ada big shell agar anda betah berbelanja barang di PT PCA SEJAHTERA!
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="img/Jepang.jpg" alt="Gambar 1" />
+        <img src="img/korea.jpg" alt="Gambar 2" />
+        <img src="img/Eropa.jpg" alt="Gambar 3" />
+        <img src="img/Australia.jpg" alt="Gambar 3" />
+        <img src="img/Amerika.jpg" alt="Gambar 3" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>

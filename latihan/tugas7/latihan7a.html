@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan7</title>
+</head> 
+</body>
+</html>
+<style>
+    body,
+    html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: arial;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;   
+    }
+
+    .content::after {
+       content: '';
+       display: block; 
+       clear: both;
+    }
+    .container {
+        width: 600px;
+        margin: 50px auto;
+        border: 5px solid #333;
+        padding: 5px;
+    }
+
+    header {
+        background-color: #8063d8;
+        padding: 40px 0;
+    }
+    
+    .sidebar {
+        float: left;
+        width: 40%;
+    }
+    .sidebar aside{
+        background-color: #2f9eff;
+        padding: 60px 0;
+    }
+
+    .sidebar nav {
+        background-color: #e45765;
+        padding: 100px 0;
+    }
+    main{
+        background-color: #e0aa77;
+        width: 60%;
+        float: right;
+        box-sizing: border-box;
+        padding: 171px;
+    }
+    footer {
+        padding: 20px 0;
+        background-color: #666
+        
+    }
+</style>
+</head>
+
+
+<body>
+    <div class="container">
+     <header>header</header>
+     <div class="contain">
+     <div class="sidebar">
+     <aside>Aside</aside>
+     <nav>Nav</nav>   
+</div>
+<main>Main</main>
+</div>
+<footer>Footer</footer>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,20 @@
+item {
+    background-color: #bada55;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+html, body {
+    font-family: Arial,;
+    color: white;
+}
+
+.container {
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+}

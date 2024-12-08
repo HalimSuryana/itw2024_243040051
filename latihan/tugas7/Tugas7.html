@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WPU Merch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Protest+Revolution&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tugas7.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">WPU Merch Shop</h2>
+          <p class="sub-heading">Hoodie & T-Shirt</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 250K</h4>
+          <p class="item">Hoodie</p>
+        </div>
+        <div class="features feature-2">
+          <div class="h4price">IDR 150K</div>
+          <p class="item">T-Shirt</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>WPU Merch</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Tutorial</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            esse. Qui maiores repudiandae culpa delectus?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🎓</div>
+          <h3>Online Course</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            esse. Qui maiores repudiandae culpa delectus?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🎙</div>
+          <h3>Podcast</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            esse. Qui maiores repudiandae culpa delectus?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">👕</div>
+          <h3>Merch</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            esse. Qui maiores repudiandae culpa delectus?
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="img/1.jpeg" alt="Gambar 1" />
+        <img src="img/2.jpg" alt="Gambar 2" />
+        <img src="img/3.jpg" alt="Gambar 3" />
+        <img src="img/4.jpg" alt="Gambar 4" />
+        <img src="img/5.jpg" alt="Gambar 5" />
+        <img src="img/6.jpg" alt="Gambar 6" />
+        <img src="img/7.jpg" alt="Gambar 7" />
+        <img src="img/8.jpg" alt="Gambar 8" />
+        <img src="img/9.jpg" alt="Gambar 9" />
+        <img src="img/10.jpg" alt="Gambar 10" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
